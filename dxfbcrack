@@ -78,8 +78,8 @@ def masuk():
 def pilih_masuk():
     sek=raw_input("\n   [•] Choose : ")
     if sek=="":
-        print("   [!] Fill In The Correct")
-        masuk()
+        print("   [!] Fill In The Correct Fish")
+        Loading()
     elif sek=="1":
         tokenz()
     elif sek=="2":
@@ -90,7 +90,7 @@ def pilih_masuk():
         keluar()
     else:
         print("   [!] Fill In The Correct")
-        masuk()
+        Loading()
 
 def tokenz():
     os.system('clear')
@@ -409,7 +409,7 @@ def pilih_passxd():
 	print "   [•] Total OK/CP: "+str(len(oks))+"/"+str(len(cekpoint))
 	print ("   [•] File Saved At : done/Indo.txt")
 	raw_input("   [ Back ]")
-	os.system("python2 dxfbhack")
+	os.system("dxfbhack.py")
 	menu()
 
 def updatesc():
@@ -419,7 +419,7 @@ def updatesc():
 	os.system("git pull origin master")
 	print ("   [•] Successfully Update")
 	raw_input("\n   [ Back ]")
-	os.system("python2 dxfbhack")	
+	os.system("dxfbhack.py")	
 	
 if __name__ == '__main__':
 	menu() 
